@@ -1,29 +1,36 @@
 <!DOCTYPE html>
 <html>
-<title>Rick Rolled!!</title>
+
 <head>
-<body style="background-color:black;">
+    <title>Flexbox</title>
+    <style>
+        .video-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-
-
-
-<video src="https://archive.org/serve/Rick_Astley_Never_Gonna_Give_You_Up/Rick_Astley_Never_Gonna_Give_You_Up.mp4" height=window.innerHeight width=innerWidth autoplay="true" controls="false" ></video>
-
-
-
-  
-</body>
-
-
-
-
-
-
-  
+        video {
+            width: 190%;
+            max-width: 300px;
+        }
+    </style>
 </head>
 
-  
+<body>
+    <div style="text-align: center;">
+        <h1 style="color: green;">
+            GeeksforGeeks
+        </h1>
+        <p>Using Flexbox</p>
+    </div>
+    <div class="video-container">
+        <video controls style="width:200%; 
+                               max-width: 400px;">
+            <source type="video/mp4" src="https://archive.org/serve/Rick_Astley_Never_Gonna_Give_You_Up/Rick_Astley_Never_Gonna_Give_You_Up.mp4" height=window.innerHeight width=innerWidth autoplay="true" controls="false" ></video>
+        </video>
+    </div>
+</body>
 
-
-  
 </html>
+
